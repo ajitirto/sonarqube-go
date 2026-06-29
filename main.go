@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func Add(a, b int) int {
@@ -16,8 +15,8 @@ func main() {
 	fmt.Printf("Hasil penjumlahan: %d\n", result)
 
 	// Pastikan TIDAK ADA string rahasia yang di-hardcode di sini
-	secretToken := os.Getenv("APP_SECRET_TOKEN")
-	if secretToken != "" {
-		fmt.Println("Token berhasil dimuat.")
-	}
+	// secretToken := os.Getenv("APP_SECRET_TOKEN")
+	// if secretToken != "" {
+	// 	fmt.Println("Token berhasil dimuat.")
+	// }
 }
